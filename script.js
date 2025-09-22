@@ -31,3 +31,11 @@ const players = {
   1: { resources: 100, base: null, units: [] },
   2: { resources: 100, base: null, units: [] },
 }
+
+document.getElementById('startBtn').onclick = () => {
+  document.getElementById('startPopup').style.display = 'none'
+  startGame()
+}
+document.getElementById('exitBtn').onclick = () => {
+  window.location.href = 'https://google.com'
+}

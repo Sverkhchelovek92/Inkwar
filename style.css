@@ -27,3 +27,22 @@ body {
   border: 1px solid #c01f1fe8;
   margin-left: 10px;
 }
+
+#startPopup {
+  position: absolute;
+  top: 50%;
+  left: 505px;
+  transform: translate(-50%, -50%);
+  background: #fff;
+  border: 1px solid #333;
+  padding: 20px;
+  text-align: center;
+}
+
+#startBtn,
+#exitBtn {
+  cursor: pointer;
+  margin: 5px;
+  padding: 5px;
+  border: 1px solid #c01f1fe8;
+}
