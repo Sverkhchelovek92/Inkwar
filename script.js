@@ -24,3 +24,10 @@ function drawGrid() {
 }
 
 drawGrid()
+
+let currentPlayer = 1
+
+const players = {
+  1: { resources: 100, base: null, units: [] },
+  2: { resources: 100, base: null, units: [] },
+}
