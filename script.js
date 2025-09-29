@@ -34,8 +34,16 @@ const players = {
 
 document.getElementById('startBtn').onclick = () => {
   document.getElementById('startPopup').style.display = 'none'
+  document.getElementById('uiPanel').style.display = 'block'
   startGame()
 }
 document.getElementById('exitBtn').onclick = () => {
   window.location.href = 'https://google.com'
+}
+
+document.getElementById('endTurnBtn').onclick = () => {
+  currentPlayer = currentPlayer === 1 ? 2 : 1
+  document.getElementById(
+    'turnInfo'
+  ).textContent = `Ход игрока ${currentPlayer}`
 }

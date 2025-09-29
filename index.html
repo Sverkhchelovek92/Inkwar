@@ -8,12 +8,21 @@
   </head>
   <body>
     <h1 class="header">Inkwar</h1>
-    <canvas id="game" width="1000" height="600"></canvas>
-    <div id="startPopup">
-      <p>Начать игру?</p>
-      <button id="startBtn">Да</button>
-      <button id="exitBtn" href="google.com">Выход</button>
+    <div id="gameContainer">
+      <canvas id="game" width="1000" height="600"></canvas>
+      <div id="startPopup">
+        <p>Начать игру?</p>
+        <button id="startBtn">Да</button>
+        <button id="exitBtn" href="google.com">Выход</button>
+      </div>
+      <div id="uiPanel">
+    <h3 id="turnInfo">Ход игрока 1</h3>
+    <button id="endTurnBtn">Закончить ход</button>
+    <div id="unitPanel">
+      
     </div>
+    </div>
+
     <script src="script.js"></script>
   </body>
 </html>
