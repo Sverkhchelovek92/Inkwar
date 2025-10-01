@@ -26,6 +26,7 @@ function drawGrid() {
 drawGrid()
 
 let currentPlayer = 1
+let currentTurn = 1
 
 const players = {
   1: { resources: 100, base: null, units: [] },
@@ -41,9 +42,23 @@ document.getElementById('exitBtn').onclick = () => {
   window.location.href = 'https://google.com'
 }
 
-document.getElementById('endTurnBtn').onclick = () => {
-  currentPlayer = currentPlayer === 1 ? 2 : 1
+function updateUI() {
   document.getElementById(
     'turnInfo'
   ).textContent = `Ход игрока ${currentPlayer}`
+  document.getElementById(
+    'turnNumber'
+  ).textContent = `Сейчас ход: ${currentTurn}`
 }
+
+document.getElementById('endTurnBtn').onclick = () => {
+  if (currentPlayer === 1) {
+    currentPlayer = 2
+  } else {
+    currentPlayer = 1
+    currentTurn += 1
+  }
+  updateUI()
+}
+
+updateUI()
