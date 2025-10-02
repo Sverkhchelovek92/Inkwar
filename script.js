@@ -29,8 +29,8 @@ let currentPlayer = 1
 let currentTurn = 1
 
 const players = {
-  1: { resources: 100, base: null, units: [] },
-  2: { resources: 100, base: null, units: [] },
+  1: { color: 'blue', resources: 100, base: null, units: [] },
+  2: { color: 'red', resources: 100, base: null, units: [] },
 }
 
 document.getElementById('startBtn').onclick = () => {
